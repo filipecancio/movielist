@@ -1,0 +1,30 @@
+{
+    "flutter": {
+        "platforms": {
+            "android": {
+                "default": {
+                    "projectId": "movielist-dev",
+                    "appId": "1:1082807196641:android:e03e29e0aaa325885190a0",
+                    "fileOutput": "android/app/google-services.json"
+                }
+            },
+            "ios": {
+                "default": {
+                    "projectId": "movielist-dev",
+                    "appId": "1:1082807196641:ios:87ffa3184016f6b95190a0",
+                    "uploadDebugSymbols": false,
+                    "fileOutput": "ios/Runner/GoogleService-Info.plist"
+                }
+            },
+            "dart": {
+                "lib/firebase_options.dart": {
+                    "projectId": "movielist-dev",
+                    "configurations": {
+                        "android": "1:1082807196641:android:e03e29e0aaa325885190a0",
+                        "ios": "1:1082807196641:ios:87ffa3184016f6b95190a0"
+                    }
+                }
+            }
+        }
+    }
+}

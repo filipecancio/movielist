@@ -9,6 +9,10 @@
 ### Firebase Patch ###
 .runtimeconfig.json
 .firebase/
+android/app/google-services.json
+ios/Runner/GoogleService-Info.plist
+  
+
 
 ### Flutter ###
 # Flutter/Dart/Pub related
