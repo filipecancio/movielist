@@ -15,7 +15,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Set up JDK 17
+      - name: Set up JDK 21
         uses: actions/setup-java@v4
         with:
           java-version: '21'
@@ -26,6 +26,11 @@ jobs:
         with:
           channel: 'stable'
           flutter-version: 3.29.2
+      
+      - name: Decode google-services.json
+        run: |
+          echo "${{ secrets.GOOGLE_SERVICES_JSON }}" | base64 --decode > android/app/google-services.json
+          echo "${{ secrets.GOOGLE_SERVICES_IOS }}" | base64 --decode > ios/Runner/GoogleService-Info.plist
 
       - name: Run Flutter dependencies
         run: flutter pub get
